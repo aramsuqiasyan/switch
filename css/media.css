@@ -1,0 +1,195 @@
+@media only screen and (min-width:1200px){
+
+}
+
+@media only screen and (max-width:1200px){
+
+}
+
+@media only screen and (max-width:1024px){
+    nav .logo{
+        width: 100%;
+        text-align: center;
+        background: rgba(0,0,0,.5);
+        top: 0;
+        padding: 6px 0;
+        box-shadow: 0 1px 7px #000;
+    }
+    nav{
+        padding: 0;
+        background: transparent;
+    }
+    nav ul li{
+        margin: 0 10px;
+        width: 100%;
+        text-align: center;
+        color: #000;
+        padding: 10px;
+        font-size: 28px;
+    }
+
+    nav ul li a{
+        letter-spacing: 1px;
+        display: inline-block;
+        border:none;        
+    }
+
+    nav ul li:hover a{
+        border:none;          
+        letter-spacing: .5rem;      
+    }
+    
+
+    nav .search input{
+        display: none;
+    }
+
+    .menuBtn{
+        display: block;
+        position: fixed;
+        right: 20px;
+        top: 4px;
+    }
+
+    nav ul{
+        position: fixed;
+        top: 0;
+        height: 100vh;        
+        width: 100%;    
+        left: 0;
+        transform: scaleX(0);
+        transform-origin: left;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background: rgba(0,0,0,0.85);
+        align-items: center;
+        opacity: 0;
+        z-index: -1;
+    }
+
+    nav ul.open{
+        transition: .3s all;        
+        height: 100vh;        
+        width: 100%;        
+        transform: scaleX(1);
+        opacity: 1;
+    }
+    
+  
+    
+    html.opened,body.opened{
+        overflow: hidden;        
+    }
+
+    body section,body header{
+        transition: .3s all;
+    }
+
+    .ourWork div.images{
+        width: 100%;
+    }
+
+    .team .teamWrapper{
+        padding: 10px 0;
+        flex-wrap: wrap;
+    }
+
+    .team .teamItem{
+        width: 170px;
+        margin: 15px 0;
+    }
+    .team .teamItem .vl{
+        display: none
+    }
+
+    footer .footer-wrapper{
+        flex-wrap: wrap;
+    }
+
+    footer .footer-wrapper .fotterItem{
+        width: 50%;
+    }
+    footer .footer-wrapper .fotterItem:last-child{
+        width: 100%;
+    }
+
+    footer .fotterItem:nth-child(3) address{
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    footer .fotterItem:nth-child(3) address p {
+        margin: 10px 15px; 
+    }  
+    
+
+
+}
+
+@media only screen and (max-width:768px){
+    section.whatWeDo .w_items{
+        flex-wrap: wrap;
+    }    
+
+    section.whatWeDo .w_items .w_item{
+        width: 200px;
+    }
+
+    .ourWork div.images{
+        justify-content:space-between;
+    }
+
+    .ourWork div.images img{
+        width: 150px;
+    }
+
+    footer .footer-wrapper .fotterItem{
+        width: 100%;
+    }
+    footer .footer-wrapper .fotterItem:nth-child(2){
+        order: -1;
+    }
+    
+    footer .postitems{
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between
+    }
+
+    footer .postitem{
+        width: 241px;
+    }
+    
+    .footer2 .footer2Items{
+        margin: 20px 0 0 ;
+    }
+}
+
+@media only screen and (max-width:425px){
+    .client .clientIcons{
+        justify-content: space-between;
+    }
+
+    .client .clientIcons i{
+        width: 120px;
+    }    
+
+    footer .footer-wrapper .fotterItem{
+        padding: 0 10px;
+    }
+
+    footer .postitems{
+        justify-content: center;
+    }
+    .ourWork div.images{
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width:320px){
+
+}
